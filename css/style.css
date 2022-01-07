@@ -44,12 +44,12 @@ html {
 }
 
 .wht-text {
-    background: url('InstagramLogov5wht.png') no-repeat center center/cover;
+    background: url('/img/InstagramLogov5wht.png') no-repeat center center/cover;
     opacity: 0;
 }
 
 .blk-text {
-    background: url('InstagramLogov5blk.png') no-repeat center center/cover;
+    background: url('/img/InstagramLogov5blk.png') no-repeat center center/cover;
 }
 
 .logo-container:hover .wht-text{
@@ -118,10 +118,6 @@ html {
     background: white;
 }
 
-.grid-item:first-child {
-    background: url('InstagramLogov5blk.png') no-repeat center center/cover;
-}
-
 .purple {
     background: var(--primary-color);
 }
@@ -170,20 +166,6 @@ html {
 
 .btn:hover {
     opacity: 1;
-}
-
-/* Grid Items in Focus */
-.in-focus {
-    background: url('InstagramLogov5blk.png') no-repeat center center/cover;
-}
-
-.zoom {
-    height: 80vh;
-    width: 62vw;
-    position: absolute;
-    z-index: 3;
-    top: 10vh;
-    left: 19vw;
 }
 
 /* Contact */

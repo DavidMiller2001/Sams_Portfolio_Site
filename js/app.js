@@ -22,25 +22,3 @@ rightButtons.forEach((button) => {
     });
 });
 
-const gridItems = document.querySelectorAll('.grid-item');
-gridItems.forEach((item) => {
-    item.addEventListener('click', toggleFocus);
-});
-
-function toggleFocus(e) {
-    e.target.classList.toggle('in-focus');
-
-    const zoomIn = document.createElement('div');
-    zoomIn.className = 'zoom';
-    const closeButton = document.createElement('div');
-    closeButton.className = 'close-btn btn';
-    const closeIcon = document.createElement('i');
-    closeIcon.className = 'fas fa-times';
-    closeButton.appendChild(closeIcon);
-    zoomIn.appendChild(closeButton);
-    document.body.appendChild(zoomIn);
-}
-
-function zoomOut() {
-
-}
