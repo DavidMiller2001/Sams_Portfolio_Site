@@ -115,14 +115,15 @@ html {
 }
 
 .grid-item {
-    background: white;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    cursor: pointer;
 }
 
-.purple {
-    background: var(--primary-color);
-}
-.red {
-    background: red;
+.lightbox-image {
+    height: 400px;
+    width: 400px;
 }
 
 .grid-item:hover {
@@ -221,4 +222,23 @@ html {
     color: white;
     cursor: pointer;
     border-radius: 5px;
+}
+
+/* Lightbox */
+
+#lightbox {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
